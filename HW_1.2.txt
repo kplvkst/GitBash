@@ -1,0 +1,29 @@
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+
+curl http://162.55.220.72:5005/terminal-hw-request
+curl "http://162.55.220.72:5005/get_method?name=Konstantin&age=35"
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+К&A@Vaio MINGW64 /e/QA/GitBash
+$ cat > script.sh
+#!/bin/bash
+
+cd group_29;
+mkdir qa_1 qa_2 qa_3;
+cd qa_2;
+touch 1.txt 2.txt 3.txt 1.json 2.json;
+mkdir qa_4 qa_5 qa_6;
+ls -la;
+mv 1.txt 2.json ../qa_3
+
+К&A@Vaio MINGW64 /e/QA/GitBash
+$ chmod +x script.sh
+
+К&A@Vaio MINGW64 /e/QA/GitBash
+$ ./script.sh
+
+
+
